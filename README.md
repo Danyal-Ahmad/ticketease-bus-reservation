@@ -32,12 +32,12 @@ The ticket booking site offers a seamless experience for users to explore variou
 
 ## Setup Instructions
 
-1. Clone the repository: `git clone https://github.com/Danyal-Ahmad/bus_booking.git`
-2. Install XAMPP from the official website.
+1. Clone the repository: `https://github.com/Danyal-Ahmad/bus_reservation`
+2. Install XAMPP from `https://www.apachefriends.org/`
 3. Copy the project folder to `C:/xampp/htdocs`.
 4. Start Apache and MySQL in XAMPP.
 5. Open phpMyAdmin (`localhost/phpmyadmin`), create a database named `online_bus`, and import SQL file from project folder.
-6. Access the project at `localhost/bus_booking-main/home.html`.
+6. Access the project at `localhost/bus_reservation/home.html`.
 
 ---
 
