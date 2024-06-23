@@ -38,6 +38,8 @@ The ticket booking site offers a seamless experience for users to explore variou
 5. Open phpMyAdmin (`localhost/phpmyadmin`), create a database named `online_bus`, and import SQL file from project folder.
 6. Access the project at `localhost/bus_booking-main/home.html`.
 
+---
+
 ### Login Credentials
 
 **Admin Login**
