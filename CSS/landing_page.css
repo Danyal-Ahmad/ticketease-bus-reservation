@@ -1,0 +1,443 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+#background{
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     z-index: -99999;
+     background-repeat: no-repeat;
+     background-size: cover;
+     overflow: hidden;
+     display: flex;
+}
+
+#container_bg{
+     background-color: #a1a1a19f;
+     opacity: 0.4;
+     height:100%;
+     width: 100%;
+     overflow: hidden;
+     z-index: -1;
+     position: absolute;
+     display: flex;
+
+     
+}
+.naviagtion {
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-top: 5%;
+    height: 30px;
+    width: 600px;
+    background: white;
+    transition: all 0.8s ease-in-out;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+}
+
+.naviagtion:hover {
+    box-shadow: 0px 0px 5px #f2a8ffb6;
+}
+
+.naviagtion li {
+    list-style: none;
+}
+
+.naviagtion li a {
+    font-family: Poppins;
+    font-weight: 400;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: #d97ee9;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    align-items: center;
+}
+
+.naviagtion li:hover {
+    border-radius: 20px;
+    background-color: #cc8ad8;
+    color: white;
+}
+
+.naviagtion a:hover {
+    color: white;
+}
+
+
+#title_1 {
+    font-family: Poppins;
+    color: white;
+    font-weight: 200;
+    font-size: 30px;
+    display: flex;
+    margin-left: 5%;
+    margin-top: 4%;
+}
+
+#title_2 {
+    font-family: Poppins;
+    color: #AA59B9;
+    font-weight: 500;
+    display: flex;
+    font-size: 30px;
+    margin-top: -1.8%;
+    margin-left: 5%;
+    transition: all 0.2s ease-in-out;
+}
+#title_2:hover{
+    color: white;
+}
+
+.ghost_button {
+    position: absolute;
+    left: 20px;
+    top: 20px;
+}
+
+.fa-ghost {
+    font-size: 40px;
+    color: transparent;
+    transition: all 0.5s ease;
+}
+
+.fa-ghost:hover {
+    color: white;
+    margin-top: 10%;
+}
+
+.fa-ghost:active {
+    color: #AA59B9;
+    margin-top: 10%;
+}
+
+
+
+label {
+    color: #f09eff;
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+
+
+#Ist_drop {
+    margin-left: 5%;
+}
+
+#src_id {
+    position: relative;
+    width: 450px;
+    height: 30px;
+    margin-top: -3%;
+}
+
+#line_dep {
+    position: absolute;
+    margin-left: 26%;
+    margin-top: -1.95%;
+    border-left: 2px dashed #686868;
+    height: 30px;
+    display: flex;
+}
+
+#arrival_icon {
+    position: absolute;
+    pointer-events: none;
+    font-size: 20px;
+    color: #a844b9;
+    display: flex;
+    margin-top: -25px;
+    margin-left: 27%;
+}
+
+#to_id {
+    position: relative;
+    width: 450px;
+    height: 30px;
+}
+
+
+#all_arrival {
+    margin-top: -0.2%;
+}
+
+#departure_icon {
+    position: absolute;
+    pointer-events: none;
+    font-size: 20px;
+    color: #a844b9;
+    display: flex;
+    margin-top: -25px;
+    margin-left: 27%;
+}
+
+#Sec_drop {
+    margin-left: 5%;
+    margin-top: -1%;
+}
+
+#third_drop {
+    margin-top: 0.8%;
+    margin-left: 5%;
+}
+
+#date_id {
+    position: relative;
+    width: 180px;
+    font-family: Poppins;
+    font-size: 14px;
+    font-weight: 500;
+    border: none;
+    outline: none;
+    color: rgb(168, 68, 185);
+    padding-left: 1%;
+    margin-top: -0.4%;
+    height: 30px;
+}
+
+input[type="date"]::-webkit-calendar-picker-indicator {
+    font-size: 20px;
+    position: absolute;
+    margin-left: 75%;
+    filter: invert(0.8);
+    background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="rgb(180, 185, 185)" d="M12 192h424c6.6 0 12 5.4 12 12v260c0 26.5-21.5 48-48 48H48c-26.5 0-48-21.5-48-48V204c0-6.6 5.4-12 12-12zm436-44v-36c0-26.5-21.5-48-48-48h-48V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H160V12c0-6.6-5.4-12-12-12h-40c-6.6 0-12 5.4-12 12v52H48C21.5 64 0 85.5 0 112v36c0 6.6 5.4 12 12 12h424c6.6 0 12-5.4 12-12z"/></svg>');
+}
+
+
+
+#line_dep_thrid {
+    position: absolute;
+    margin-left: 10%;
+    margin-top: 1%;
+    border-left: 2px dashed #686868;
+    height: 30px;
+}
+#service_drop{
+    margin-left: 5%;
+    margin-top: 0.8%;
+}
+
+select {
+    letter-spacing: 2px;
+    display: inline-block;
+    font-family: Poppins;
+    appearance: none;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    background-color: white;
+    color: #a844b9;
+    padding-left: 1%;
+}
+
+option {
+    letter-spacing: 2px;
+    display: inline-block;
+    font-family: Poppins;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 400;
+    outline: none;
+    border: none;
+    color: #a844b9;
+}
+
+
+#submit_btn {
+     position: fixed;
+     left: 5%;
+     bottom: 14%;
+     width: 180px;
+     height: 40px;
+     font-family: poppins;
+     color: #ffffff;
+     font-weight: 600;
+     outline: none;
+     border-radius: 30px;
+     cursor: pointer;
+     border: none !important;
+     transition: ease-in-out 0.2s;
+     background: linear-gradient(179deg,  rgb(203, 98, 221) 0%,rgb(203, 98, 221) 100%);
+}
+
+#submit_btn:hover {
+     transition: ease-in-out 0.2s;
+     background: linear-gradient(179deg,  rgba(167, 68, 185, 1) 0%,rgba(167, 68, 185, 1) 100%);
+     color: white;
+     opacity: 1;
+}
+
+#submit_btn:active {
+     background: linear-gradient(179deg,  rgba(167, 68, 185, 0.7) 0%,rgba(167, 68, 185, 0.7) 100%);
+     border: 2px solid  #f1a0ff;
+     box-shadow: 0px 0px 10px #f1a0ff;
+     transform: scale(0.95);
+}
+
+
+.table_background{
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+    height: auto;
+    max-height: 220px;
+    width: 450px;
+    margin-top: -17%;
+    margin-left: 58%;
+    overflow: scroll;scrollbar-width: none;
+    
+
+}
+
+#ticket_selection{
+    color: white; 
+    font-family: poppins;
+    text-align: center;
+    align-content: center;
+    width: 450px;
+    height: 35px;
+    font-size: 15px;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    background-color: #c273d0;}
+    
+table {
+    margin-top: -15px;
+    border-collapse: separate;
+    border-spacing: 3px;
+    color: white;
+    width: 100%;
+    margin-left: -10px;
+
+}
+th,td {
+    padding-left: 15px;
+    color: white;
+    text-align: center;
+    text-transform: capitalize;
+
+}
+
+input[type="radio"]{
+    width: 15px;
+    height: 15px;
+    border: none;
+    accent-color: #c273d0; 
+
+}
+
+
+.lastbutton {
+    width: 450px;
+    height: 35px;
+    font-family: poppins;
+    color: #ffffff;
+    font-weight: 600;
+    outline: none;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: ease-in-out 0.2s;
+    background-color: #c273d0c1;
+}
+
+.lastbutton:hover {
+    transition: ease-in-out 0.2s;
+    background-color: #7c3c87;
+    color: white;
+    opacity: 1;
+}
+
+.lastbutton:active {
+    background: #464646a5;
+
+}
+
+/* ------------------------------------ S O C I A L - M E D I A --- NAVIGATION---------------------------- */
+ .navigation_menu_align{
+    overflow: visible;
+    position: fixed;
+    bottom: 180px;
+    background-color: #68686845;
+    border-radius: 10px;
+    left: -10px;
+    
+}
+.social_navigation {
+    writing-mode: vertical-lr;
+    position: relative;
+    display: flex;
+    margin-top: -20%;
+    margin-left: 2%;
+ 
+}
+
+.social_navigation li {
+    padding: 10px;
+    list-style-type: none;
+    vertical-align: middle;
+}
+
+.social_navigation li a {
+    text-decoration: none !important;
+    text-transform: uppercase;
+    font-family: Poppins;
+    font-size: 15px;
+    color: #ffffff;
+    transition: all 0.20s ease-in;
+    border-radius: 10px, 0px, 10px, 0px;
+}
+
+.fa {
+    font-size: 20px;
+    transform: rotate(90deg);
+    vertical-align: bottom;
+   
+   
+}
+
+.fa-regular {
+    font-size: 18px;
+    vertical-align: bottom;
+}
+
+.fa-regular {
+    font-size: 18px;
+    vertical-align: center;
+}
+
+.fa-facebook,
+.facebook:hover {
+    color: #54acff;
+
+}
+.fa-instagram,
+.instagram:hover {
+    color: #ca71e5;
+}
+.fa-x,
+.twitter:hover {
+    color: rgb(81, 212, 255);
+} 
+ 
+

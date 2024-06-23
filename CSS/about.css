@@ -1,0 +1,322 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    color: white;
+    scrollbar-width: none;
+    overflow-x: hidden;
+    scroll-behavior: smooth scroll;
+}
+
+body {
+    background: url(/IMG/about_bg.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    background-size: inherit;
+    filter: blur(5px) brightness(1);
+    z-index: -1;
+}
+
+#container_bg {
+    background-color: #b4b4b47e;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.naviagtion {
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-top: 5%;
+    height: 30px;
+    width: 600px;
+    background: white;
+    transition: all 0.8s ease-in-out;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+}
+
+.naviagtion:hover {
+    box-shadow: 0px 0px 5px #f2a8ffb6;
+}
+
+.naviagtion li {
+    list-style: none;
+}
+
+.naviagtion li a {
+    font-family: Poppins;
+    font-weight: 400;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: #d97ee9;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    align-items: center;
+}
+
+.naviagtion li:hover {
+    border-radius: 20px;
+    background-color: #cc8ad8;
+    color: white;
+}
+
+.naviagtion a:hover {
+    color: white;
+}
+
+.content, .dev_img, .project_ref, .contact {
+    margin-left: 2%;
+    padding-left: 15%;
+    padding-top: 1%;
+    margin-top: 2%;
+    word-spacing: 0.5px;
+    width: 80%;
+    height: 100%;
+    background-color: #27272767;
+    border-radius: 200px;
+    text-align: justify;
+    font-size: 15px;
+    position: relative;
+    border-radius: 500px;
+    overflow: hidden;
+    justify-content: center;
+    transition: all 0.5s ease;
+}
+
+.content:hover, .dev_img:hover, .project_ref:hover, .contact:hover {
+    background-color: #272727d6;
+}
+
+.content_p {
+    width: 40%;
+}
+
+.bus_img {
+    position: absolute;
+    right: -6%;
+    top: -55%;
+    filter: drop-shadow(0.5px 0.5px 0.5px black);
+    width: 36%;
+    height: auto;
+    animation: fadeInRight 1s ease;
+}
+
+hr {
+    width: 30%;
+    height: auto;
+    margin: 1em auto 2em;
+    display: flex;
+    border: 0.5 white solid;
+}
+
+.dev-p {
+    width: 100%;
+    height: auto;
+    z-index: -99;
+}
+
+.danyal_img {
+    display: inline-block;
+    text-align: center;
+    margin-left: 13.5%;
+    width: auto;
+    transition: all 0.3s ease;
+}
+
+.danyal_avatar {
+    height: auto;
+    width: 200px;
+    border-radius: 100%;
+    background-color: #FFBD2F;
+    border: 1px solid white;
+    box-shadow: 0px 0px 3px white;
+    transition: all 0.3s ease;
+}
+
+.danyal_avatar:hover {
+    background-color: white;
+    box-shadow: 0px 0px 5px #52ff80;
+}
+
+.danyal_img:hover {
+    transform: scale(1.1);
+}
+
+.ayesha_img {
+    display: inline-block;
+    text-align: center;
+    margin-left: 2%;
+    transition: all 0.3s ease;
+}
+
+.ayesha_avatar {
+    height: auto;
+    width: 200px;
+    border-radius: 100%;
+    background-color: #4891E0;
+    border: 1px solid white;
+    box-shadow: 0px 0px 3px white;
+    transition: all 0.3s ease;
+}
+
+.ayesha_avatar:hover {
+    background-color: white;
+    box-shadow: 0px 0px 5px #ff5252;
+}
+
+.ayesha_img:hover {
+    transform: scale(1.1);
+}
+
+.gulfam_img {
+    display: inline-block;
+    text-align: center;
+    margin-left: 2%;
+    transition: all 0.3s ease;
+}
+
+.gulfam_avatar {
+    height: auto;
+    width: 200px;
+    border-radius: 100%;
+    background-color: #ff6161;
+    border: 1px solid white;
+    box-shadow: 0px 0px 3px white;
+    transition: all 0.3s ease;
+}
+
+.gulfam_avatar:hover {
+    background-color: white;
+    box-shadow: 0px 0px 5px #F7A427;
+}
+
+.gulfam_img:hover {
+    transform: scale(1.1);
+}
+
+.fm_logo {
+    margin: 10px;
+    height: 200px;
+    width: 200px;
+    border-radius: 100%;
+    border: 1px solid white;
+    box-shadow: 0px 0px 3px white;
+    transition: all 0.3s ease;
+}
+
+.fm_logo:hover {
+    background-color: white;
+    box-shadow: 0px 0px 5px #F7A427;
+}
+
+.fm_p {
+    overflow-y: hidden;
+    text-align: justify;
+    font-size: 15px;
+    width: 70%;
+}
+
+.contact_p {
+    overflow-y: hidden;
+    text-align: justify;
+    font-size: 15px;
+    width: 60%;
+}
+
+.contact_list {
+    margin-top: 15px;
+    list-style-type: none;
+}
+
+.contact_list li {
+    margin-bottom: 0.2%;
+    display: flex;
+    align-items: center;
+}
+
+.contact_list li b {
+    margin-right: 5px;
+}
+
+.contact_list li i {
+    margin-right: 10px;
+}
+
+.social_media {
+    margin-top: 20px;
+    list-style-type: none;
+    padding: 0;
+    display: flex;
+    gap: 30px;
+}
+
+.social_media li {
+    display: inline-block;
+}
+
+.social_media a {
+    text-decoration: none;
+    color: #333;
+    font-size: 24px;
+}
+
+/* Facebook */
+.fa-facebook-f:hover {
+    color: #FFBD2F;
+}
+
+/* Twitter */
+.fa-x:hover {
+    color: #FFBD2F;
+}
+
+/* Instagram */
+.fa-instagram:hover {
+    color: #FFBD2F;
+}
+
+/* LinkedIn */
+.fa-linkedin-in:hover {
+    color: #FFBD2F;
+}
+
+@keyframes fadeInRight {
+    0% {
+        opacity: 0;
+        transform: translateX(200px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}

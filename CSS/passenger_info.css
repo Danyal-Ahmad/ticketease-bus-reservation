@@ -1,0 +1,430 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    font-size: 1.2rem;
+    color: white;
+}
+
+#background{
+     height: 100%;
+     width: 100%;
+     position: absolute;
+     z-index: -99999;
+     background-repeat: no-repeat;
+     background-size: cover;
+     overflow: hidden;
+     display: flex;
+    
+}
+
+#container_bg{
+     background-color: #a1a1a19f;
+     opacity: 0.6;
+     height:100%;
+     width: 100%;
+     overflow: hidden;
+     z-index: -1;
+     position: absolute;
+     display: flex;
+
+     
+}
+.naviagtion {
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-top: 5%;
+    height: 30px;
+    width: 600px;
+    background: white;
+    transition: all 0.8s ease-in-out;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+}
+
+.naviagtion:hover {
+    box-shadow: 0px 0px 5px #f2a8ffb6;
+}
+
+.naviagtion li {
+    list-style: none;
+}
+
+.naviagtion li a {
+    font-family: Poppins;
+    font-weight: 400;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: #d97ee9;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    align-items: center;
+}
+
+.naviagtion li:hover {
+    border-radius: 20px;
+    background-color: #cc8ad8;
+    color: white;
+}
+
+.naviagtion a:hover {
+    color: white;
+}
+
+
+.bus_cricle{
+    background-color: rgb(60, 60, 60);
+    border: 0.5px solid white;
+    box-shadow: 0px 0px 3px white;height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin-top: 4.8%;
+    position: absolute;
+    margin-left: 30.3%;
+    transition: all 0.5s ease-in-out;
+}
+.bus_cricle:hover{
+  background-color: white;
+}
+.bus_icon{
+    margin-left: 15px;
+    margin-top: 15px;
+    position: absolute;
+    width: 70px;
+
+}
+.container_pssngr_1 {
+    float: left;
+    background-color: rgba(0, 0, 0, 0.300);
+    border: 0.5px solid white;
+    box-shadow: 0px 0px 3px white;
+    margin-top: 8%;
+    margin-left: 22%;
+    width: 250px;
+    height: 350px;
+    padding-left: 10px;
+    padding-top: 60px;
+    border-radius: 20px;
+    line-height: 2.1;
+}
+h3{   
+    font: 2rem;
+    color: #ffffff;
+    font-family: Poppins;
+    font-weight: 600;
+    margin-top: -10px;
+    position: relative;
+
+}
+label {
+    color: #f09eff;
+    position: relative;
+    font-family: Poppins;
+    font-weight: 500;
+}
+#frm{
+    color: white;
+    font-weight: 600;
+}
+#to{
+    color: white;
+    font-weight: 600;
+}
+#dt{
+    color: white;
+    font-weight: 600;
+}
+#radio_name{
+    color: white;
+    font-weight: 600;
+}
+#fair_name{
+    color: white;
+    font-weight: 600;
+}
+
+/* passenger info page css here. */
+.bus_cricle2{
+    background-color: rgb(60, 60, 60);
+    border: 0.5px solid white;
+    box-shadow: 0px 0px 3px white;height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin-top: 4.8%;
+    position: absolute;
+    margin-left: 41%;
+    transition: all 0.5s ease-in-out;
+}
+.bus_cricle2:hover{
+  background-color: white;
+}
+.container_pssngr_2 {
+    float: right;
+    margin-top: 12.95%;
+    margin-right: 20%;
+    padding: 20px;
+    width: 740px;
+    height: 350px;
+    background-color: rgba(0, 0, 0, 0.300);
+    border: 0.5px solid white;
+    box-shadow: 0px 0px 3px white;
+    border-radius: 20px;
+    -webkit-box-flex: initial;
+    overflow: scroll;
+    scrollbar-width: none;
+
+}
+
+
+#h3_id{
+    position: relative;
+    width: 100%;
+    margin-top: 20px;
+    display: block;
+    text-transform: uppercase;
+}
+
+input {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: 150px;
+    background-color: #ffffff98;
+    border-radius: 5px;
+    color: #87368f;
+    padding-left: 5px;
+    
+}
+input:focus{
+    background-color: white;
+}
+input#num_id{
+    padding-left: 5px;
+    height: 30px;
+    width: 297px;
+}
+input::placeholder{
+    color: #88368fb5;
+    font-size: 13px;
+    padding: 1px;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+
+#gtrws_id{
+    background: linear-gradient(-45deg, #ea08ff91, #ff565685, #2dc9c9b2, #6297a8, #ea08ffa8,  #ff5656c5, #2dc9c97e, #6297a8a6 );
+    background-size: 600%;
+    color: #ffffff;
+    border: none;
+    margin-left: 5px;
+    font-size: 20px;
+    font-family: Poppins;
+    border-radius: 5px;
+    opacity: 0.6;
+    height: 30px;
+    animation: colorchanger 50s linear infinite;
+
+}
+
+#gtrws_id:hover {
+    background: #ac58bb;
+    box-shadow: 0px 0px 2px white;
+    color: white;
+    opacity: 0.9;
+    text-align: center;
+}
+
+#gtrws_id:active {
+    background: #464646;
+    border: 1px white solid;
+    color: white;
+}
+
+#delrw_id{
+    background-color: rgb(255, 121, 121);
+    color: #ffffff;
+    border: none;
+    margin-top: -2px;
+    margin-left: 5px;
+    font-size: 15px;
+    font-family: Poppins;
+    border-radius: 5px;
+    opacity: 0.6;
+    height: 30px;
+    width: 22%;
+    animation: colorchanger 50s linear infinite;
+
+}
+
+#delrw_id:hover {
+    background-color: rgb(255, 121, 121);
+    color: white;
+    opacity: 0.9;
+    text-align: center;
+}
+
+#delrw_id:active {
+    background-color: rgb(255, 75, 75);
+    border: 1px white solid;
+    box-shadow: 0px 0px 5px white;
+    color: white;
+}
+
+#gtrws_id:hover {
+    background: #ac58bb;
+    box-shadow: 0px 0px 2px white;
+    color: white;
+    opacity: 0.9;
+    text-align: center;
+}
+
+#gtrws_id:active {
+    background: #464646;
+    border: 1px white solid;
+    color: white;
+}
+
+.btn_pssngr{
+    color:#353535;
+    border: none;
+    margin-top: -2px;
+    margin-left: 5px;
+    font-size: 15px;
+    font-family: Poppins;
+    border-radius: 5px;
+    opacity: 0.6;
+    height: 30px;
+    width: 40%;
+    font-weight: 600;
+    animation: colorchanger 50s linear infinite;
+
+}
+
+.btn_pssngr:hover {
+    color: #353535;
+    opacity: 0.9;
+    text-align: center;
+}
+
+.btn_pssngr:active {
+    border: 1px#353535 solid;
+    box-shadow: 0px 0px 5px #353535;
+    color: #353535;
+}
+
+
+table {
+        align-content: center;
+        text-align: center;
+        border: 0.2px white solid;
+        margin-top: 10px;
+        width:690px;
+}
+td {
+    font-size: 15px;
+    padding: 5px;
+    text-align: center;
+    column-gap: 5px;
+ 
+}
+
+
+.bg1 {
+    height: fit-content;
+    width: 100vw;
+    position: absolute;
+    z-index: -1;
+}
+
+@keyframes colorchanger {
+    0% {
+        background-position: 0% 50%;
+    }
+
+    50% {
+        background-position: 100% 50%;
+    }
+
+    100% {
+        background-position: 50% 0%;
+    }
+
+}
+/* ------------------------------------ S O C I A L - M E D I A --- NAVIGATION---------------------------- */
+.navigation_menu_align{
+    overflow: visible;
+    position: fixed;
+    bottom: 180px;
+    background-color: #6868688b;
+    border-radius: 10px;
+    left: -10px;
+    
+}
+.social_navigation {
+    writing-mode: vertical-lr;
+    position: relative;
+    display: flex;
+    margin-top: -20%;
+    margin-left: 2%;
+ 
+}
+
+.social_navigation li {
+    padding: 10px;
+    list-style-type: none;
+    vertical-align: middle;
+}
+
+.social_navigation li a {
+    text-decoration: none !important;
+    text-transform: uppercase;
+    font-family: Poppins;
+    font-size: 15px;
+    color: #ffffff;
+    transition: all 0.20s ease-in;
+    border-radius: 10px, 0px, 10px, 0px;
+}
+
+.fa {
+    font-size: 20px;
+    transform: rotate(90deg);
+    vertical-align: center;
+   
+   
+}
+
+.fa-regular {
+    font-size: 18px;
+    vertical-align: center;
+}
+
+.fa-facebook,
+.facebook:hover {
+    color: #54acff;
+
+}
+.fa-instagram,
+.instagram:hover {
+    color: #ca71e5;
+}
+.fa-x,
+.twitter:hover {
+    color: rgb(81, 212, 255);
+} 
+ 
+

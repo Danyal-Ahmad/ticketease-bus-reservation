@@ -1,0 +1,349 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scrollbar-width: none;
+}
+
+body {
+    background: url(/IMG/mange_bus.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    color: white;
+}
+
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    background-size: inherit;
+    filter: blur(5px) brightness(1);
+    z-index: -1;
+}
+
+#container_bg {
+    background-color: #b4b4b47e;
+    opacity: 0.8;
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+/* Header Styles */
+.header {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    text-align: center;
+}
+
+
+.naviagtion {
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-top: 5%;
+    height: 30px;
+    width: 600px;
+    background: white;
+    transition: all 0.8s ease-in-out;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+}
+
+.naviagtion:hover {
+    box-shadow: 0px 0px 5px #f2a8ffb6;
+}
+
+.naviagtion li {
+    list-style: none;
+}
+
+.naviagtion li a {
+    font-family: Poppins;
+    font-weight: 400;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: #d97ee9;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    align-items: center;
+}
+
+.naviagtion li:hover {
+    border-radius: 20px;
+    background-color: #cc8ad8;
+    color: white;
+}
+
+.naviagtion a:hover {
+    color: white;
+}
+
+/* Table Styles */
+.bus_list_table {
+    margin-top: 6%;
+    margin-left: 4%;
+    background-color: rgba(255, 255, 255, 0.795);
+    border-radius: 10px;
+    border: 1px solid #87368f;
+    max-width: 1400px;
+    height: auto;
+    overflow-y: scroll;
+    scrollbar-width: none;
+
+}
+
+.bus_list_table table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.bus_list_table th, .bus_list_table td {
+    padding: 5px;
+    text-align: left;
+    border-spacing: 0;
+}
+
+.bus_list_table th {
+    background-color: #87368f;
+    border: none;
+    color: #fff;
+    font-size: 14px;
+    font-weight: 400;
+}
+
+.bus_list_table td {
+    color: #87368f;
+    font-size: 12px;
+    border-bottom: 0.2px solid #989898;
+}
+
+/* Form Styles */
+input[type="text"],
+input[type="number"],
+select {
+    cursor: pointer;
+    outline: none;
+    border: 1px solid;
+    cursor: pointer;
+    height: 30px;
+    width: 300px;
+    font: 13px;
+    color: #ac3fb6;
+    border-radius: 5px;
+    padding-left: 5px;
+    font-family: Poppins;
+}
+
+input::placeholder {
+    color: #87368f;
+    opacity: 0.5;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    border: 1px solid #ac3fb6;
+    -webkit-text-fill-color: #ac3fb6;
+    -webkit-box-shadow: 0 0 0px 1000px #ffffffd0 inset;
+}
+
+input[type="text"],
+input[type="number"] {
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    overflow: hidden;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+input:hover {
+    background-color: #ffffff90;
+}
+
+input:focus {
+    background-color: white;
+    color: #ac3fb6;
+    border: 1px solid #ac3fb6;
+}
+
+button {
+    background-color: #c42dc9b2;
+    background-size: 600%;
+    width: 100px;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    font-family: Poppins;
+    border-radius: 5px;
+    opacity: 0.6;
+    height: 40px;
+}
+i{
+    display: inline-block;
+    vertical-align: middle;
+    line-height: 1;
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+button:hover {
+    background-color: #c42dc9b2;
+    color: white;
+    opacity: 1;
+    text-align: center;
+}
+
+button:active {
+    border: 1px white solid;
+}
+
+label {
+    color: #87368f;
+    position: relative;
+    display: inline-block;
+    font-size: 15px;
+    font-family: Poppins;
+    font-weight: 500;
+}
+h2 {
+    font-size: 2rem;
+    color: #87368f;
+    font-weight: 600;
+    text-transform: uppercase;
+    text-align: center;
+    
+}
+
+.resequence-form button {
+    background-color: #c42dc9b2;
+    background-size: 600%;
+    width: 100%;
+    color: #ffffff;
+    border: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: Poppins;
+    margin-top: 25px;
+    opacity: 0.6;
+    height: 40px;
+    animation: colorchanger 50s linear infinite;
+
+}
+.resequence-form button:hover {
+    background-color: #c42dc9b2;
+    color: white;
+    opacity: 1;
+
+}
+
+.success-message {
+    color: rgb(255, 255, 255);
+    background-color: #87368f;
+    overflow: hidden;
+    font-weight: bold;
+    border-bottom: 0.5px solid #ffffff61;
+}
+
+.error-message {
+    color: rgb(255, 255, 255);
+    background-color: #87368f;
+    overflow: hidden;
+    font-weight: bold;
+    border-bottom: 0.5px solid #989898;
+}
+
+.navigation_menu_align {
+    overflow: visible;
+    position: fixed;
+    bottom: 180px;
+    background-color: #68686845;
+    border-radius: 10px;
+    left: -10px;
+}
+
+.social_navigation {
+    writing-mode: vertical-lr;
+    position: relative;
+    display: flex;
+    margin-top: -20%;
+    margin-left: 2%;
+}
+
+.social_navigation li {
+    padding: 10px;
+    list-style-type: none;
+    vertical-align: middle;
+}
+
+.social_navigation li a {
+    text-decoration: none !important;
+    text-transform: uppercase;
+    font-family: Poppins;
+    font-size: 15px;
+    color: #ffffff;
+    transition: all 0.20s ease-in;
+    border-radius: 10px, 0px, 10px, 0px;
+}
+
+.fa {
+    font-size: 20px;
+    transform: rotate(90deg);
+    vertical-align: bottom;
+}
+
+.fa-regular {
+    font-size: 18px;
+    vertical-align: bottom;
+}
+
+.fa-regular {
+    font-size: 18px;
+    vertical-align: center;
+}
+
+.fa-facebook,
+.facebook:hover {
+    color: #54acff;
+}
+
+.fa-instagram,
+.instagram:hover {
+    color: #ca71e5;
+}
+
+.fa-x,
+.twitter:hover {
+    color: rgb(81, 212, 255);
+}

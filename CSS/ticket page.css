@@ -1,0 +1,198 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -ms-user-select: none;
+    user-select: none; 
+}
+
+body {
+    background-image: url(/IMG/ticket_background.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+body::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: inherit;
+    background-size: inherit;
+    filter: blur(5px) brightness(1);
+    z-index: -1;
+    image-rendering: pixelated;
+}
+
+#container_bg {
+    background: linear-gradient(176deg, rgba(255, 80, 142, 1) 0%, rgba(254, 136, 106, 1) 100%);
+    opacity: 0.6;
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -10000;
+}
+
+.printableArea {
+    background-color: #ffffff;
+    height: 160mm;
+    width: 130mm;
+    margin-left: 5mm;
+    margin-top: 5mm;
+    border-radius: 10px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.container {
+    background-color: #F58265;
+    height: 170mm;
+    width: 140mm;
+    position: absolute;
+    top: 5%;
+    margin-left: 10%;
+    border-radius: 10px;
+}
+
+table {
+    border-collapse: separate;
+    width: 100%;
+    table-layout: fixed;
+    margin-top: -40px;
+    position: relative;
+    display: table;
+    border-spacing: 0 5px; 
+    pointer-events: none;
+}
+
+th, td {
+    pointer-events: none;
+    text-align: left;
+    color: #F58265;
+    word-wrap: break-word;
+}
+
+th {
+    text-transform: uppercase;
+    pointer-events: none;
+    font-size: 12px;
+    display: table-cell;
+}
+
+td {
+    text-transform: uppercase;
+    font-size: 10px;
+    display: table-cell;
+}
+
+.watermark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    opacity: 0.08;
+    z-index: 0;
+    pointer-events: none;
+}
+
+.watermark img {
+    width: 150px;
+    height: auto;
+}
+
+h3 {
+    color: #F58265;
+    margin-left: 21%;
+    display: flex;
+    font-size: 20px;
+    width: 200%;
+    font-weight: 600;
+}
+
+i {
+    vertical-align: middle;
+}
+
+#barcode {
+    display: block;
+    margin-left: -8px;
+}
+
+ol {
+    color: #F58265;
+    font-size: 8px;
+    margin-top: -5px;
+}
+
+.ticket_printing {
+    position: absolute;
+    left: 60%;
+    top: 40%;
+    color: white;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-align: center;
+    padding-bottom: 10px;
+}
+
+
+input[type="button"] {
+    background-color: #F58265;
+    width: 300px;
+    color: #ffffff;
+    border: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    border-radius: 5px;
+    height: 40px;
+    transition: all 0.3s ease;
+}
+
+input[type="button"]:hover {
+    background: #bd574c;
+    color: white;
+    opacity: 1;
+}
+
+input[type="button"]:active {
+    border: 1px white solid;
+}
+
+@media print {
+    body {
+        font-size: 10pt; 
+    }
+    .ticket_printing {
+        display: none;
+    }
+    .printableArea {
+        margin-left: 0;
+        margin-top: 0;
+        width: 100%;
+        height: auto;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .container {
+        width: 100%;
+        margin-left: 0;
+    }
+    .printableArea {
+        width: 100%;
+        margin-left: 0;
+        margin-top: 0;
+        height: auto;
+    }
+}

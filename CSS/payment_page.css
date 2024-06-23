@@ -1,0 +1,540 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: Poppins;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    color: white;
+}
+
+#background {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    z-index: -99999;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+
+#container_bg {
+    background-color: #a1a1a19f;
+    opacity: 0.6;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+    position: absolute;
+
+
+}
+
+.home_button {
+    color: #87368f;
+}
+
+.back_button {
+    background: transparent;
+    z-index: 1;
+    color: #ff9afa;
+    border: 1px white solid;
+    text-decoration: none;
+    text-align: center;
+    padding-top: 5px;
+    opacity: 0.6;
+    border-radius: 20px;
+    display: inline-block;
+    width: 100px;
+    height: 30px;
+    position: absolute;
+    margin-top: 2%;
+    margin-left: 2%;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.back_button:after {
+    position: absolute;
+    content: "";
+    width: 0;
+    height: 100%;
+    top: 0;
+    right: 0;
+    z-index: -1;
+    background-color: #ff51f6;
+    border-radius: 20px;
+    transition: all 0.2s ease-in-out;
+    display: inline-flex;
+}
+
+.back_button:hover:after {
+    right: 0;
+    width: 100%;
+}
+
+
+
+.naviagtion {
+    position: relative;
+    align-items: center;
+    justify-content: space-evenly;
+    display: flex;
+    cursor: pointer;
+    border-radius: 20px;
+    margin-left: 30%;
+    margin-top: 5%;
+    height: 30px;
+    width: 600px;
+    background: white;
+    transition: all 0.8s ease-in-out;
+    max-width: 100%;
+    max-height: 100%;
+    display: flex;
+}
+
+.naviagtion:hover {
+    box-shadow: 0px 0px 5px #f2a8ffb6;
+}
+
+.naviagtion li {
+    list-style: none;
+}
+
+.naviagtion li a {
+    font-family: Poppins;
+    font-weight: 400;
+    padding: 5px 15px;
+    border-radius: 20px;
+    color: #d97ee9;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 17px;
+    text-align: center;
+    align-items: center;
+}
+
+.naviagtion li:hover {
+    border-radius: 20px;
+    background-color: #cc8ad8;
+    color: white;
+}
+
+.naviagtion a:hover {
+    color: white;
+}
+
+
+label {
+    color: #87368f;
+    font-size: 15px;
+    pointer-events: none;
+    font-family: Poppins;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+input {
+    cursor: pointer;;
+    outline: none;
+    border: 1px solid;
+    cursor: pointer;
+    height: 30px;
+    width: 300px;
+    font: 13px;
+    color: #ac3fb6;
+    border: 1px solid #ac3fb6;
+    border-radius: 5px;
+
+}
+
+input::placeholder {
+    color: #87368f;
+    opacity: 0.5;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus {
+    border: 1px solid #ac3fb6;
+    -webkit-text-fill-color: #ac3fb6;
+    -webkit-box-shadow: 0 0 0px 1000px #ffffffd0 inset;
+}
+
+input[type="text"] {
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    overflow: hidden;
+    padding-left: 5px;
+    font-family: Poppins;
+}
+
+input[type="number"] {
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    overflow: hidden;
+    padding-left: 5px;
+    font-family: Poppins;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+
+input[type=radio] {
+    accent-color: #ec19ff;
+    height: 15px;
+    width: 15px;
+    vertical-align: middle;
+    margin-top: -3px;
+    z-index: 99;
+}
+
+input:hover {
+    background-color: #ffffff90;
+
+}
+
+input:focus {
+    background-color: white;
+    color: #ac3fb6;
+    border: 1px solid #ac3fb6;
+}
+
+textarea {
+
+    padding-left: 5px;
+    padding-top: 2px;
+    resize: none;
+    width: 300px;
+    color: #ac3fb6;
+    border-radius: 5px;
+    border: 1px solid rgb(172, 63, 182);
+    scrollbar-width: none;
+}
+
+textarea::placeholder {
+    color: #87368f;
+    opacity: 0.5;
+}
+
+textarea:focus {
+    background-color: white;
+    color: #ac3fb6;
+    border: 1px solid #ac3fb6;
+}
+textarea:active{
+    border: 1px solid #ac3fb6;
+    
+
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#gender_label {
+    color: #87368f;
+    font-size: 15px;
+    pointer-events: none;
+    font-family: Poppins;
+    font-weight: 300;
+    text-transform: uppercase;
+    pointer-events: all;
+}
+
+.bus_cricle {
+    background-color: rgb(60, 60, 60);
+    border: 0.5px solid white;
+    box-shadow: 0px 0px 3px white;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin-top: 1%;
+    position: absolute;
+    margin-left: 28%;
+    transition: all 0.5s ease-in-out;
+}
+.bus_cricle:hover{
+  background-color: white;
+}
+.bus_icon {
+    margin-left: 15px;
+    margin-top: 15px;
+    position: absolute;
+    width: 70px;
+
+}
+
+.contuner {
+    background-color: rgba(255, 255, 255, 0.414) !important;
+    height: 450px !important;
+    width: 350px;
+    float: left;
+    margin-left: 20%;
+    margin-top: 4%;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 45px;
+    overflow: hidden;
+}
+
+h3 {
+    font: 2rem;
+    color: #87368f;
+    font-family: Poppins;
+    font-weight: 600;
+    padding-top: 20px;
+    text-transform: uppercase;
+    position: relative;
+}
+
+#gender_radio {
+    padding-top: 5px;
+}
+
+#person_address {
+    padding-top: 5px;
+}
+
+#person_email {
+    padding-top: 5px;
+}
+
+#person_zipcode {
+    padding-top: 5px;
+}
+
+.bus_cricle_2 {
+    background-color: rgb(60, 60, 60);
+    border: 0.5px solid white;
+    box-shadow: 0px 0px 3px white;
+    height: 100px;
+    width: 100px;
+    border-radius: 100px;
+    margin-top: 1%;
+    position: absolute;
+    margin-left: 61%;
+    transition: all 0.5s ease-in-out;
+}
+.bus_cricle_2:hover{
+  background-color: white;
+}
+
+.bus_icon_2 {
+    margin-left: 15px;
+    margin-top: 15px;
+    position: absolute;
+    width: 70px;
+
+}
+
+.contuner_2 {
+    background-color: rgba(255, 255, 255, 0.414) !important;
+    height: 450px !important;
+    width: 350px;
+    float: left;
+    margin-left: 10%;
+    margin-top: 4%;
+    border-radius: 10px;
+    padding-left: 20px;
+    padding-top: 45px;
+    overflow: hidden;
+}
+
+select {
+    letter-spacing: 2px;
+    display: inline-block;
+    width: 300px;
+    height: 30px;
+    font-family: Poppins;
+    appearance: none;
+    font-size: 15px;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    background-color: rgb(255, 255, 255);
+    border-radius: 5px;
+    color: #ac3fb6;
+    border: 1px solid #ac3fb6;
+    padding-left: 1%;
+}
+
+option {
+    letter-spacing: 2px;
+    display: inline-block;
+    font-family: Poppins;
+    background-color: white;
+    font-size: 15px;
+    font-weight: 300;
+    outline: none;
+    border: none;
+    color: #a844b9;
+}
+
+input[type="date"] {
+    font-size: 13px;
+    font-weight: 500;
+    text-decoration: none;
+    overflow: hidden;
+    padding-left: 5px;
+}
+
+input[type="password"] {
+    cursor: pointer;;
+    outline: none;
+    border: 1px solid;
+    cursor: pointer;
+    height: 30px;
+    width: 300px;
+    font: 13px;
+    padding-left: 5px;
+    color: #ac3fb6;
+    border: 1px solid #ac3fb6;
+    border-radius: 5px;
+
+}
+
+#card_number {
+    padding-top: 5px;
+}
+
+#card_date {
+    padding-top: 5px;
+}
+
+#card_cvc {
+    padding-top: 5px;
+}
+
+input[type="submit"] {
+    background-color: #2dc9c9b2;
+    background-size: 600%;
+    width: 150px;
+    color: #ffffff;
+    border: none;
+    text-transform: uppercase;
+    font-size: 20px;
+    font-family: Poppins;
+    border-radius: 5px;
+    margin-top: 15px;
+    opacity: 0.6;
+    height: 40px;
+    animation: colorchanger 50s linear infinite;
+
+}
+
+input[type="submit"]:hover {
+    background: #30e3e3b2;
+    color: white;
+    opacity: 1;
+    text-align: center;
+}
+
+input[type="submit"]:active {
+    border: 1px white solid;
+}
+
+
+input[type="reset"] {
+    background-color: #b657be;
+    background-size: 600%;
+    width: 150px;
+    color: #ffffff;
+    border: none;
+    font-size: 20px;
+    font-family: Poppins;
+    border-radius: 5px;
+    opacity: 0.6;
+    margin-top: -3px;
+    text-transform: uppercase;
+    height: 40px;
+    animation: colorchanger 50s linear infinite;
+
+}
+
+input[type="reset"]:hover {
+    background: #b657be;
+    color: white;
+    opacity: 1;
+    text-align: center;
+}
+
+input[type="reset"]:active {
+    border: 1px white solid;
+
+}
+
+/* ------------------------------------ S O C I A L - M E D I A --- NAVIGATION---------------------------- */
+.navigation_menu_align {
+    overflow: visible;
+    position: fixed;
+    bottom: 180px;
+    background-color: #68686845;
+    border-radius: 10px;
+    left: -10px;
+
+}
+
+.social_navigation {
+    writing-mode: vertical-lr;
+    position: relative;
+    display: flex;
+    margin-top: -20%;
+    margin-left: 2%;
+
+}
+
+.social_navigation li {
+    padding: 10px;
+    list-style-type: none;
+    vertical-align: middle;
+}
+
+.social_navigation li a {
+    text-decoration: none !important;
+    text-transform: uppercase;
+    font-family: Poppins;
+    font-size: 15px;
+    color: #ffffff;
+    transition: all 0.20s ease-in;
+    border-radius: 10px, 0px, 10px, 0px;
+}
+
+.fa {
+    font-size: 20px;
+    transform: rotate(90deg);
+    vertical-align: bottom;
+
+
+}
+
+.fa-regular {
+    font-size: 18px;
+    vertical-align: bottom;
+}
+
+.fa-regular {
+    font-size: 18px;
+    vertical-align: center;
+}
+
+.fa-facebook,
+.facebook:hover {
+    color: #54acff;
+
+}
+
+.fa-instagram,
+.instagram:hover {
+    color: #ca71e5;
+}
+
+.fa-x,
+.twitter:hover {
+    color: rgb(81, 212, 255);
+}
