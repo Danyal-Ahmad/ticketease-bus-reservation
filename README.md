@@ -56,8 +56,6 @@ The ticket booking site offers a seamless experience for users to explore variou
 - **Admin:** Responsible for managing site functionality, including adding/updating/deleting bookings and tickets. Can access admin-specific features and functionalities.
   
 - **User:** Can browse available tickets, select seats, and make bookings. Users have limited access compared to admins and cannot access administrative functions.
-- Admin and user can log in through the same login page with different credentials, but only users can create new accounts; admins cannot sign up for new accounts.
-
 ---
 
 ## Future Improvements
