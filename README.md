@@ -1,7 +1,8 @@
+
+![ui_image](https://github.com/Danyal-Ahmad/bus_reservation/assets/75643229/c85a6464-5588-40f0-b651-4da4d98272a4)
+
+---
 # Ticket Booking Site
-
-![UI Image](https://github.com/Danyal-Ahmad/bus_booking/assets/75643229/f41a8b12-7a41-4f4b-b48a-45e32fd5408b)
-
 This project is a ticket booking website developed using HTML, CSS, PHP, JavaScript, and MySQL. It allows users to browse available tickets and make bookings.
 
 ## Description
