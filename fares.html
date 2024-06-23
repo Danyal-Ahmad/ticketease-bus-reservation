@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fares - TicketEase</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css"
+        integrity="sha256-KJ6Bni4CIlHpUPdbLg9cC65SzkQXsvF+DmaL+INdPTk=" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link href="CSS/fares.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/jsbarcode@3.11.0/dist/JsBarcode.all.min.js"></script>
+
+</head>
+
+<body>
+    <div id="container_bg"></div>
+
+    <div class="navbar">
+        <header> <!--Naviagtion Menu -->
+            <ul class="naviagtion">
+                <li><a href="landing_page.php">HOME</a></li>
+                <li><a href="refund.php">REFUND</a></li>
+                <li><a href="fares.html">FARES</a></li>
+                <li><a href="services.html">SERVICES</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="login_page.php">LOGIN</a></li>
+            </ul>
+        </header>
+    </div>
+
+    <div class="Ist-fare">
+        <p class="p_note"><strong>NOTE!!</strong> We are currently enhancing this page to provide real-time route and
+            fare updates. Stay tuned for the latest information on your travel routes and fare details. Thank you for
+            your patience as we work to improve your experience. </p>
+        <br>
+        <p>The fare-list is the real-time fare for each route, changing based on the company's financial condition,
+            expenses, and fuel prices to align with cost management and market conditions.</p>
+        <table class="Lahore">
+            <tr>
+                <th>From ⮂ To</th>
+                <th>Fare</th>
+                <th>Service</th>
+            </tr>
+            <tr>
+                <td>Lahore ⮂ Peshawar</td>
+                <td>1500</td>
+                <td>Business</td>
+            </tr>
+            <tr>
+                <td>Lahore ⮂ Islamabad</td>
+                <td>1000</td>
+                <td>Executive</td>
+            </tr>
+            <tr>
+                <td>Lahore ⮂ Rawalpindi</td>
+                <td>1200</td>
+                <td>VVIP</td>
+            </tr>
+            <tr>
+                <td>Lahore ⮂ Gujranwala</td>
+                <td>600</td>
+                <td>Business</td>
+            </tr>
+            <tr>
+                <td>Lahore ⮂ Karachi</td>
+                <td>1800</td>
+                <td>Executive</td>
+            </tr>
+            <tr>
+                <td>Peshawar ⮂ Islamabad</td>
+                <td>800</td>
+                <td>Executive</td>
+            </tr>
+            <tr>
+                <td>Peshawar ⮂ Rawalpindi</td>
+                <td>1000</td>
+                <td>VVIP</td>
+            </tr>
+            <tr>
+                <td>Peshawar ⮂ Lahore</td>
+                <td>1500</td>
+                <td>Business</td>
+            </tr>
+            <tr>
+                <td>Islamabad ⮂ Rawalpindi</td>
+                <td>500</td>
+                <td>Business</td>
+            </tr>
+            <tr>
+                <td>Islamabad ⮂ Lahore</td>
+                <td>1000</td>
+                <td>Executive</td>
+            </tr>
+            <tr>
+                <td>Rawalpindi ⮂ Gujranwala</td>
+                <td>900</td>
+                <td>VVIP</td>
+            </tr>
+            <tr>
+                <td>Rawalpindi ⮂ Lahore</td>
+                <td>1200</td>
+                <td>Business</td>
+            </tr>
+            <tr>
+                <td>Gujranwala ⮂ Karachi</td>
+                <td>2000</td>
+                <td>Executive</td>
+            </tr>
+            <tr>
+                <td>Gujranwala ⮂ Lahore</td>
+                <td>700</td>
+                <td>VVIP</td>
+            </tr>
+            <tr>
+                <td>Karachi ⮂ Multan</td>
+                <td>2500</td>
+                <td>Business</td>
+            </tr>
+            <tr>
+                <td>Karachi ⮂ Lahore</td>
+                <td>3000</td>
+                <td>Executive</td>
+            </tr>
+            <tr>
+                <td>Multan ⮂ Quetta</td>
+                <td>1800</td>
+                <td>VVIP</td>
+            </tr>
+            <tr>
+                <td>Multan ⮂ Lahore</td>
+                <td>1500</td>
+                <td>Business</td>
+            </tr>
+            <tr>
+                <td>Quetta ⮂ Gilgit</td>
+                <td>3500</td>
+                <td>Executive</td>
+            </tr>
+            <tr>
+                <td>Quetta ⮂ Lahore</td>
+                <td>2800</td>
+                <td>VVIP</td>
+            </tr>
+            <tr>
+                <td>Gilgit ⮂ Sialkot</td>
+                <td>3000</td>
+                <td>Business</td>
+            </tr>
+            <tr>
+                <td>Gilgit ⮂ Lahore</td>
+                <td>3200</td>
+                <td>Executive</td>
+            </tr>
+            <tr>
+                <td>Sialkot ⮂ Sargodha</td>
+                <td>1000</td>
+                <td>VVIP</td>
+            </tr>
+            <tr>
+                <td>Sialkot ⮂ Lahore</td>
+                <td>800</td>
+                <td>Business</td>
+            </tr>
+            <tr>
+                <td>Sargodha ⮂ Jhelum</td>
+                <td>600</td>
+                <td>Executive</td>
+            </tr>
+        </table>
+        <br>
+    </div>
+
+    <br>
+    <br>
+    <br>
+    </div>
+</body>
+
+</html>

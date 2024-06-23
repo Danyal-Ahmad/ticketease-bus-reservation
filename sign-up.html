@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>signup - TicketEase</title>
+    <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css"> -->
+    <link href="CSS/sign-up.css" rel="stylesheet">
+
+    <script>
+        function validate() {
+            var u, e, c, p, cp;
+            u = document.getElementById('username_signup_id').value;
+            e = document.getElementById('email_signup_id').value;
+            c = document.getElementById('contact_signup_id').value;
+            p = document.getElementById('pass-signup_id').value;
+            cp = document.getElementById('cpass_signup_id').value;
+            if (isNaN(c)) {
+                alert("Please enter a valid number");
+                return false;
+            }
+    
+            else if (p == cp) {
+                return true;
+            }
+            else {
+                return false;
+            }
+    
+        }
+        // Eye Icon password show/hide
+// const togglePassword = document.querySelector('#togglePassword');
+// const password = document.querySelector('#pass-signup_id');
+
+
+// togglePassword.addEventListener('click', function (e) {
+//     const type = password.getAttribute('type') === 'password' ? 'text' : 'password';
+//     password.setAttribute('type', type);
+//     this.classList.toggle('fa-eye-slash');
+// });
+
+    </script>
+</head>
+<body>
+    <img src="IMG/signup_background.png" id="signup_background">
+    <div id="container_back"></div>
+    <img src="IMG/bus_overlay.png" id="img_logo">
+    <div id="logo_background"></div>
+
+    <div id="content_all">
+        <h1>SIGNUP</h1>
+        <div class="container_login">
+            <form autocomplete="off" action="sign-up.php" method="post" onsubmit="return validate()">
+               
+                <label for="name" id="lable_1">Name</label> <br>
+                <input type="text" name="usrnam_name" id="username_signup_id" placeholder="Enter your name" minlength="8" maxlength="46"    oninput="this.value = this.value.replace(/[^a-zA-Z\s]/g, '')" required>
+                <br>
+
+                <label for="email" id="lable_1">Email</label> <br>
+                <input type="text"  name="mail_name" id="email_signup_id"  placeholder="Enter your mail" minlength="8"  maxlength="14" oninput="this.value = this.value.replace(/[^0-9_a-z]/g, '')" required>
+                <input type="email" name="name" id="domain_login_id" value="@employ.ticketease.com" disabled>
+                <br>
+
+                <label for="phone" id="lable_1">Phone Number</label> <br>
+                <input type="tel" name="contct_name" id="contact_signup_id" placeholder="Enter your PK Number" pattern="[0-9]{11}" minlength="11" maxlength="11" oninput="this.value = this.value.replace(/[^\d]/g, '')" required>                <span id="tel_message" style=" display: block; position: absolute; pointer-events: none; color: rgb(251, 255, 43); font-size: 12px; height: auto; padding: 0px; margin-top: 2.4%; text-align: center; font-family: poppins;"></span>
+                <br>
+
+
+                <label for="password" id="lable_1">Password</label> <br>
+                <input type="password" name="pass_name" id="pass-signup_id" maxlength="20"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{12,}" placeholder="•••••••••" required>
+                <i class="far fa-eye" id="togglePassword"style=" position: absolute; margin-left: 20.5%; margin-top: 8px; font-size: 15px; color: #ea08ff; cursor: pointer;"></i>
+                <br>
+
+                <label for="password" id="lable_1">Password</label> <br>
+                <input type="password" name="cpass_name" id="cpass_signup_id" maxlength="20"  pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{12,}" placeholder="•••••••••" required>
+                <i class="far fa-eye" id="togglePassword"style=" position: absolute; margin-left: 20.5%; margin-top: 8px; font-size: 15px; color: #ea08ff; cursor: pointer;"></i>
+                <br>
+
+                <div class="checkbox">
+                <p><input type="checkbox" id="checkbox_sigup" required>&nbsp;I agree to the <a href="t&c.html" class="a_checkbook">terms and conditions</a></p>
+                </div>
+
+
+                <div class="btnn"><br>
+                    <input class="btn_signup" type="submit" value="SUBMIT">
+                </div>
+
+            </form>
+
+            <a href="login_page.html" id="btn_login">I have already an account ?</a>
+        </div>
+    </div>
+    
+</body>
+</html>
