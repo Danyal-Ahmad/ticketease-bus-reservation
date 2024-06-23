@@ -1,5 +1,4 @@
-
-https://github.com/Danyal-Ahmad/bus_reservation/assets/75643229/b1fac975-70f8-4fd2-a9f5-36a8a5e8fa9d
+![ui_image](https://github.com/Danyal-Ahmad/bus_reservation/assets/75643229/e6ad4872-a87b-46a9-9235-bc4e517241ba)
 
 ---
 # Ticket Booking Site
