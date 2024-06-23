@@ -1,5 +1,5 @@
 
-![ui_image](https://github.com/Danyal-Ahmad/bus_reservation/assets/75643229/c85a6464-5588-40f0-b651-4da4d98272a4)
+https://github.com/Danyal-Ahmad/bus_reservation/assets/75643229/b1fac975-70f8-4fd2-a9f5-36a8a5e8fa9d
 
 ---
 # Ticket Booking Site
