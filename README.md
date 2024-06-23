@@ -61,7 +61,6 @@ The ticket booking site offers a seamless experience for users to explore variou
 ## Future Improvements
 
 - **Responsive Design:** Enhance the site to be mobile-friendly.
-- **User Authentication:** Implement login/signup functionality.
 - **Payment Integration:** Integrate payment gateways for booking transactions.
 
 ## Contributors
