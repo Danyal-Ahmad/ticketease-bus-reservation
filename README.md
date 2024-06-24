@@ -31,7 +31,7 @@ The ticket booking site offers a seamless experience for users to explore variou
 
 ## Setup Instructions
 
-1. Clone the repository: `https://github.com/Danyal-Ahmad/bus_reservation`
+1. Clone the repository: `https://github.com/Danyal-Ahmad/ticketease-bus-reservation.git`
 2. Install XAMPP from `https://www.apachefriends.org/`
 3. Copy the project folder to `C:/xampp/htdocs`.
 4. Start Apache and MySQL in XAMPP.
