@@ -75,3 +75,8 @@ The ticket booking site offers a seamless experience for users to explore variou
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/denial_khxn/)
 [![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white)](mailto:danyalahmaad.pjb@gmail.com)
 
+## Visitor Counter
+
+![visitor badge](https://visitor-badge.imlete.cn/?id=github.Danyal-Ahmad.ticketease-bus-reservationleft_text=My%Repo%20Visitors)
+
+
