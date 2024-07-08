@@ -73,7 +73,11 @@ The ticket booking site offers a seamless experience for users to explore variou
 
 [![LinkedIn](https://img.shields.io/badge/LinkedIn-0077B5?logo=linkedin&logoColor=white)](https://pk.linkedin.com/in/danyal-ahmaad)
 [![Instagram](https://img.shields.io/badge/Instagram-E4405F?logo=instagram&logoColor=white)](https://www.instagram.com/denial_khxn/)
-[![Gmail](https://img.shields.io/badge/Gmail-D14836?logo=gmail&logoColor=white)](mailto:danyalahmaad.pjb@gmail.com)
+[![Gmail](https://img.shields.io/badge/Gmail-333333?logo=gmail&logoColor=white)](mailto:danyalahmaad.pjb@gmail.com)
+[![Snapchat](https://img.shields.io/badge/Snapchat-FFFC00?logo=snapchat&logoColor=white)](https://www.snapchat.com/add/denial_khxn)
+[![YouTube](https://img.shields.io/badge/YouTube-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/@danyalahmaadxd1095)
+[![Pinterest](https://img.shields.io/badge/Pinterest-E60023?logo=pinterest&logoColor=white)](https://www.pinterest.com/denial_khxn/)
+[![Facebook](https://img.shields.io/badge/Facebook-1877F2?logo=facebook&logoColor=white)](https://www.facebook.com/Daanyaal.78/)
 
 ## Visitor Counter
 
