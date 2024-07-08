@@ -76,7 +76,6 @@ The ticket booking site offers a seamless experience for users to explore variou
 [![Gmail](https://img.shields.io/badge/Gmail-333333?logo=gmail&logoColor=white)](mailto:danyalahmaad.pjb@gmail.com)
 [![Snapchat](https://img.shields.io/badge/Snapchat-FFFC00?logo=snapchat&logoColor=white)](https://www.snapchat.com/add/denial_khxn)
 [![YouTube](https://img.shields.io/badge/YouTube-FF0000?logo=youtube&logoColor=white)](https://www.youtube.com/@DAG-coder)
-[![Pinterest](https://img.shields.io/badge/Pinterest-E60023?logo=pinterest&logoColor=white)](https://www.pinterest.com/denial_khxn/)
 [![Facebook](https://img.shields.io/badge/Facebook-1877F2?logo=facebook&logoColor=white)](https://www.facebook.com/Daanyaal.78/)
 
 ## Visitor Counter
