@@ -1,4 +1,4 @@
-![ui_image](https://github.com/Danyal-Ahmad/bus_reservation/assets/75643229/e6ad4872-a87b-46a9-9235-bc4e517241ba) (https://github.com/Danyal-Ahmad/ticketease-bus-reservation)
+[![ui_image](https://github.com/Danyal-Ahmad/bus_reservation/assets/75643229/e6ad4872-a87b-46a9-9235-bc4e517241ba)](https://github.com/Danyal-Ahmad/ticketease-bus-reservation)
 
 ---
 # Ticket Booking Site
